@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home - Sanjalika water park</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- ✅ Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Font Awesome (Icons) -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+  <!-- ✅ Bootstrap 5.3 CSS (latest) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="bootstrap.bundle.min.js"></script>
+  <!-- ✅ Your Custom CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/advertized.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/food.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+ <div id="headercode"></div>
+
+  <!-- ================= HERO / CAROUSEL SECTION ================= -->
+  <section class="hero-carousel">
+    <div class="owl-carousel owl-theme">
+      <!-- Slide 1 -->
+      <div class="item">
+        <div class="hero-slide" style="background-image:url('res/event.jpeg');">
+          <div class="overlay"></div>
+          <div class="container text-white d-flex align-items-center min-vh-100">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <h5 class="text-uppercase text-primary mb-3 ">Welcome to Sanjalika Water Park</h5>
+                <h1 class="display-3 fw-bold mb-3 text-light">The Ultimate Destination for Adventure & Laughter</h1>
+                <p class="mb-4 fs-5">Enjoy heart-pounding rides, splashy water slides, and magical moments with family
+                  and friends.</p>
+
+              </div>
+              <!-- Booking form -->
+              <!-- Booking form container -->
+               
+              <div class="col-lg-5 offset-lg-1 bg-light text-dark p-4 rounded shadow booking-form">
+                <div id="pdfContent">
+                <h3 class="mb-3 text-center text-uppercase">Book Your Ticket</h3>
+
+                <!-- ✅ Form has an ID so JS can target it -->
+                 
+                <form id="ticketForm">
+                  <div class="row g-3">
+
+                    <!-- Name field -->
+                    <div class="col-12">
+                      <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+
+                    <!-- Email field -->
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+
+                    <!-- Phone field -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Phone" required>
+                    </div>
+
+                    <!-- Package selection -->
+                    <div class="col-12">
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Select Package</option>
+                        <option>Family Packages</option>
+                        <option>Basic Packages</option>
+                        <option>Premium Packages</option>
+                      </select>
+                    </div>
+
+                    <!-- Date field -->
+                    <div class="col-md-6">
+                      <input type="date" class="form-control" required>
+                    </div>
+
+                    <!-- Guests field -->
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" placeholder="Guests" min="1" required>
+                    </div>
+
+                    <!-- Submit button (type button so JS can handle click) -->
+                    <div class="col-12">
+                      <button type="button" id="bookNowBtn" class="btn btn-primary w-100">Book Now</button>
+                    </div>
+
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="item">
+        <div class="hero-slide" style="background-image:url('res/carousel-2.jpg');">
+          <div class="overlay"></div>
+          <div class="container text-white d-flex align-items-center min-vh-100">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <h5 class="text-uppercase text-primary mb-3">Welcome to Sanjalika Water Park</h5>
+                <h1 class="display-3 fw-bold mb-3 text-light">The Biggest Splash of Fun and Adventure</h1>
+                <p class="mb-4 fs-5">Dive into thrilling water adventures and unforgettable rides!</p>
+
+              </div>
+              <!-- Booking form container -->
+              <!-- <div class="col-lg-5 offset-lg-1 bg-light text-dark p-4 rounded shadow booking-form">
+                <h3 class="mb-3 text-center text-uppercase">Book Your Ticket</h3>
+
+
+                <form id="ticketForm">
+                  <div class="row g-3">
+
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Phone" required>
+                    </div>
+
+
+                    <div class="col-12">
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Select Package</option>
+                        <option>Family Packages</option>
+                        <option>Basic Packages</option>
+                        <option>Premium Packages</option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <input type="date" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" placeholder="Guests" min="1" required>
+                    </div>
+
+
+                    <div class="col-12">
+                      <button type="button" id="bookNowBtn" class="btn btn-primary w-100">Book Now</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =================Advertizement section=================== -->
+  <!-- Centered Banner -->
+  <div class="d-flex justify-content-center my-4">
+    <article class="ad-card text-white rounded shadow mx-auto" aria-label="Sanjalika Water Park Advert Card" style="
+      background: url('res/card.jpg') center/cover no-repeat; 
+      border-radius: 16px;
+      width: 90%;             /* responsive width */
+      max-width: 800px;       /* banner ki maximum width */
+    ">
+
+      <div class="ad-content" style="background: rgba(0,0,0,0.55); padding:30px; border-radius:16px;">
+        <div>
+          <h1 class="title text-center fw-bold">SANJALIKA WATER PARK</h1>
+          <div class="sub text-center mb-3">Thrilling Water Rides • Family Fun • Delicious Treats</div>
+          <p class="desc text-center">
+            Dive into a world of excitement at Sanjalika Water Park — safe kids’ zones, high-speed water slides,
+            and a breathtaking swimming lagoon. Book your ticket today and enjoy special discounts for families!
+          </p>
+
+          <div class="features d-flex flex-wrap gap-2 justify-content-center mb-3">
+            <div class="feature bg-info px-3 py-2 rounded">Family Packages</div>
+            <div class="feature bg-info px-3 py-2 rounded">Fast Track Access</div>
+            <div class="feature bg-info px-3 py-2 rounded">Food Courts & Refreshments</div>
+            <div class="feature bg-info px-3 py-2 rounded">Ample Parking Space</div>
+          </div>
+
+          <div class="price-row d-flex justify-content-center align-items-baseline gap-3 mb-3">
+            <div class="price fw-bold" style="font-size:1.5rem; color:white;">
+              Rs. 1,499<span style="font-size:0.9rem; color:#fff;">/ per person</span>
+            </div>
+            <div class="old text-decoration-line-through text-light">Rs. 2,199</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="cta d-flex justify-content-center gap-3 mb-2">
+            <button class="btn btn-primary mb-3" id="openBook">Book Now</button>
+            <button class="btn btn-primary mb-3" id="moreInfo">More Info</button>
+          </div>
+          <div class="small text-center" style="font-size:0.85rem;">
+            Opening Hours: 10:00 AM — 8:00 PM | Weekend Special Show
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- Modal  -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-x" id="closeModal">✕</button>
+      <h3 id="modalTitle" style="margin-top:4px">Booking Form</h3>
+      <p style="margin:6px 0 12px 0;color:#285254">
+        Enter your name and number of persons below. We’ll contact you soon.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <input id="nameInput" placeholder="Your Name" />
+        <div class="form-row">
+          <input id="phone" placeholder="Phone Number" />
+          <select id="people">
+            <option value="1">1 Person</option>
+            <option value="2">2 Persons</option>
+            <option value="3">3 Persons</option>
+            <option value="4">4 Persons</option>
+            <option value="5">5 Persons</option>
+            <option value="6">6+ Persons</option>
+          </select>
+        </div>
+        <div style="display:flex;gap:8px;justify-content:center">
+          <button class="btn btn-book" id="submitBtn">Submit</button>
+          <button class="btn" id="cancelBtn" style="background:#f1f6f6">Cancel</button>
+        </div>
+        <div id="msg" style="font-size:13px;color:#0b5956"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ===================== Video Section ===================== -->
+  <section class="video-section">
+    <div class="video-content">
+      <h2 class="section-title">🎥 Sanjalika Water Park – Official Video</h2>
+      <p class="video-subtitle">
+        Experience thrilling rides, family fun & refreshing moments at Pakistan’s largest water park.
+      </p>
+
+      <div class="video-wrapper">
+      
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OQruK-0k7g4?si=uYdmOFGYLlNA56q2"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURE SECTION ================= -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Features</h2>
+        <p class="text-muted">Unmatched water rides and facilities for all age groups.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Feature card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/feature-1.jpg" class="card-img-top feature-img" alt="Best Pools">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">Best Pools</h4>
+              <p class="mb-3">Cool off in our crystal clear pools designed for maximum fun & relaxation.</p>
+              <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/feature-2.jpg" class="card-img-top feature-img" alt="Waterslides">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">Waterslides</h4>
+              <p class="mb-3">Thrilling waterslides of all sizes from gentle slopes to heart-racing drops.</p>
+               <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/feature-3.jpg" class="card-img-top feature-img" alt="River Rides">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">River Rides</h4>
+              <p class="mb-3">Float along relaxing river rides and enjoy the serene surroundings.</p>
+             <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/kidszone.jpeg" class="card-img-top feature-img" alt="Kids Zone">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">Kids Zone</h4>
+              <p class="mb-3">Specially designed kids’ play areas and safe water fun for little ones.</p>
+               <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/img47.jpg" class="card-img-top feature-img" alt="Food Court">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">Food Court</h4>
+              <p class="mb-3">Tasty snacks and full meals from our food courts and beverage stations.</p>
+              <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card feature-card border-0 shadow h-100">
+            <div class="feature-img-wrapper">
+              <img src="res/event.jpeg" class="card-img-top feature-img" alt="Event Space">
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fw-bold mb-2">Event Space</h4>
+              <p class="mb-3">Beautiful event spaces for birthdays, parties, and corporate gatherings.</p>
+              <a href="booking.html" class="btn btn-primary  mb-3">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <div id="footercode"></div>
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Your Custom JS -->
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- html2pdf لائبریری -->
+<script src="booking.js"></script>
+<script src="js/download.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+
+</body>
+
+</html>

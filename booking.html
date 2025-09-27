@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Booking-Sanjalika water park</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- ✅ Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ✅ Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- ✅ Bootstrap 5.3 CSS (latest) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ✅ Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- ✅ Your Custom CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/advertized.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <div id="headercode"></div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb" style="background-image:url('res/event.jpeg');">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Book Your Ticket</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Booking</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Booking + Features Section -->
+    <!-- Booking + Image Section -->
+    <section class="booking-feature-section py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <!-- Booking form -->
+                <div class="col-lg-5">
+                    <div class="bg-light text-dark p-4 rounded shadow booking-form">
+                        <h3 class="mb-3 text-center text-uppercase">Book Your Ticket</h3>
+
+                        <form id="ticketForm">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Phone" required>
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select" required>
+                                        <option value="" selected disabled>Select Package</option>
+                                        <option>Family Packages</option>
+                                        <option>Basic Packages</option>
+                                        <option>Premium Packages</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" placeholder="Guests" min="1" required>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="bookNowBtn" class="btn btn-primary w-100">Book
+                                        Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right side image with text -->
+                <div class="col-lg-7">
+                    <div class="image-content-wrapper rounded shadow">
+                        <img src="res/feature-1.jpg" alt="Sanjalika Water Park" class="img-fluid rounded-top">
+                        <div class="p-4 bg-white rounded-bottom">
+                            <h4 class="fw-bold mb-2 text-primary">Sanjalika Water Park</h4>
+                            <div class="text-block">
+                                <p>
+                                    Enjoy our crystal clear pools designed for maximum fun & relaxation.
+                                    Thrilling water slides, kids’ zone, and food courts – everything at one place!
+                                </p>
+                                <p>
+                                    Whether you're planning a family outing or a corporate event,
+                                    Sanjalika Water Park is the ultimate destination for excitement and comfort.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <div id="footercode"></div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
